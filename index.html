@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Clases particulares de informática. Tarifas individuales y grupales, con descuentos por traer alumnos." />
+    <meta name="theme-color" content="#061b2d" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23061b2d'/%3E%3Cpath d='M19 18h26v28H19z' fill='none' stroke='%23c8ff32' stroke-width='5'/%3E%3Cpath d='M25 28l-5 4 5 4M35 36l5-4-5-4' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <title>Clases particulares | Aprende y aprueba con nota</title>
+    <style>
+      :root { --ink:#061b2d; --lime:#c8ff32; --white:#f7fbfc; --soft:#dfeaf0; --line:rgba(255,255,255,.18); --paper-line:#b9cbd5; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { margin:0; background:var(--ink); color:var(--white); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:16px; line-height:1.5; }
+      a { color:inherit; } a:focus-visible,input:focus-visible { outline:3px solid var(--lime); outline-offset:4px; }
+      .wrap { width:min(1080px,calc(100% - 40px)); margin:auto; }
+      header { padding:20px 0; border-bottom:1px solid var(--line); } nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+      .brand { font-weight:850; letter-spacing:-.04em; text-decoration:none; font-size:1.25rem; }.brand span,h1 em,.offer h2,.reward strong { color:var(--lime); }.nav-link { color:var(--soft); text-decoration:none; font-size:.95rem; font-weight:700; }
+      h1,h2,h3,p { margin-top:0; }.hero { min-height:460px; display:grid; place-items:center; padding:70px 0 78px; text-align:center; }.hero-copy { max-width:900px; }
+      h1 { margin:0; font-size:clamp(3.1rem,7.4vw,6.9rem); line-height:.91; letter-spacing:-.08em; } h1 em { font-style:normal; }.mobile-break { display:none; }
+      .hero-action,.whatsapp { display:inline-flex; align-items:center; justify-content:center; margin-top:34px; padding:14px 20px; background:var(--lime); color:var(--ink); border:0; border-radius:8px; text-decoration:none; font:800 1rem/1.2 inherit; text-align:center; }
+      .section { padding:80px 0; }.light { background:var(--white); color:var(--ink); }.section-heading { max-width:680px; }h2 { font-size:clamp(2rem,4.4vw,3.8rem); line-height:1; letter-spacing:-.06em; margin-bottom:18px; }
+      .price { width:min(100%,760px); display:flex; flex-direction:column; align-items:flex-start; gap:28px; margin-top:42px; padding:36px; border:1px solid var(--paper-line); border-radius:17px; background:#fff; }.price h3 { margin-bottom:12px; font-size:1.5rem; letter-spacing:-.03em; }
+      .amount { margin:0; font-weight:900; font-size:clamp(3.3rem,7vw,5.5rem); line-height:.9; letter-spacing:-.08em; }.amount span { font-size:1.05rem; font-weight:700; letter-spacing:0; }.price-footer { width:100%; display:flex; flex-direction:column; align-items:flex-start; gap:18px; }
+      .whatsapp { margin:0; max-width:390px; font-weight:900; }.whatsapp-icon { margin-right:.5em; font-size:1.1em; }.selector { width:100%; padding:22px 0 0; border-top:1px solid var(--paper-line); }.selector-head { display:flex; justify-content:space-between; align-items:baseline; gap:16px; color:#496174; font-size:1rem; }.selector-head label { font-weight:700; }output { color:var(--ink); font-size:1.35rem; font-weight:850; }input[type="range"] { width:100%; height:28px; margin:10px 0 0; accent-color:var(--lime); cursor:pointer; }
+      .offer { background:var(--ink); }.offer-grid { display:grid; grid-template-columns:.82fr 1.18fr; gap:56px; padding:76px 0; align-items:center; }.offer h2 { margin:0; }.reward-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }.reward { min-height:174px; margin:0; padding:25px; border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.045); color:var(--soft); }.reward-label { margin:0 0 20px; color:var(--white); font-size:.9rem; font-weight:800; letter-spacing:.02em; }.reward-copy { margin:0; font-size:1.08rem; line-height:1.45; }.reward strong { display:block; margin-bottom:8px; font-size:1.5rem; line-height:1; }.deadline { padding:76px 0 88px; text-align:center; }.deadline h2 { max-width:760px; margin:auto; color:var(--lime); }
+      @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } } @media (max-width:760px) { .wrap { width:min(100% - 32px,1080px); } header { display:none; }.hero { min-height:0; padding:70px 0 74px; }h1 { font-size:clamp(2.9rem,12vw,3rem); }.mobile-break { display:initial; }.hero-action { width:100%; max-width:290px; margin-top:32px; }.section { padding:62px 0; }.price { min-height:0; padding:28px 24px; }.price-footer { align-items:stretch; }.whatsapp { width:100%; max-width:none; min-height:54px; }.offer-grid { grid-template-columns:1fr; gap:28px; padding:56px 0; }.reward-list { grid-template-columns:1fr; gap:12px; }.reward { min-height:0; padding:22px; }.reward-label { margin-bottom:14px; }.deadline { padding:58px 0 66px; } }
+    </style>
+  </head>
+  <body>
+    <header><div class="wrap"><nav aria-label="Navegación principal"><a class="brand" href="#inicio">clases<span>.info</span></a><a class="nav-link" href="#tarifas">Tarifas</a></nav></div></header>
+    <main id="inicio">
+      <section class="wrap hero" aria-labelledby="titulo-principal"><div class="hero-copy"><h1 id="titulo-principal">Clases particulares:<br><em>aprende y aprueba<br class="mobile-break"> con nota.</em></h1><a class="hero-action" href="#tarifas">Conoce las tarifas</a></div></section>
+      <section class="section light" id="tarifas" aria-labelledby="tarifas-titulo"><div class="wrap"><div class="section-heading"><h2 id="tarifas-titulo">Clases adaptadas a lo que necesites</h2></div><article class="price" aria-live="polite"><div><h3 id="class-title">Clase individual</h3><p class="amount"><b id="class-price">20</b> € <span>/ hora</span></p></div><div class="selector"><div class="selector-head"><label for="people">Personas en la clase</label><output id="people-output" for="people">1</output></div><input id="people" type="range" min="1" max="5" value="1" step="1" /></div><div class="price-footer"><a class="whatsapp" id="class-whatsapp" target="_blank" rel="noopener" href="https://wa.me/?text=Hola%21%20Estoy%20interesado%20en%20clases%20individuales."><span class="whatsapp-icon" aria-hidden="true">◉</span>Enviar WhatsApp</a></div></article></div></section>
+      <section class="offer" aria-labelledby="recompensa-titulo"><div class="wrap offer-grid"><h2 id="recompensa-titulo">Traer alumnos tiene recompensa.</h2><div class="reward-list"><article class="reward"><p class="reward-label">Clases individuales</p><p class="reward-copy"><strong>15 €/h</strong>durante un mes por cada alumno que traigas.</p></article><article class="reward"><p class="reward-label">Clases grupales</p><p class="reward-copy"><strong>2 € menos</strong>sobre el precio final.</p></article></div></div></section>
+      <section class="wrap deadline" aria-labelledby="deadline-title"><h2 id="deadline-title">No esperes a <span id="deadline-month">diciembre</span> para construir tu sobresaliente.</h2></section>
+    </main>
+    <script>
+      (() => { const people=document.querySelector('#people'), peopleOutput=document.querySelector('#people-output'), title=document.querySelector('#class-title'), price=document.querySelector('#class-price'), whatsapp=document.querySelector('#class-whatsapp'); const updateClass=()=>{ const count=Number(people.value), hourlyPrice=count===1?20:count===2?18:16, individual=count===1, message=individual?'Hola! Estoy interesado en clases individuales.':`Hola! Estoy interesado en clases grupales para ${count} personas.`; peopleOutput.value=count; peopleOutput.textContent=count; title.textContent=individual?'Clase individual':'Clase grupal'; price.textContent=hourlyPrice; whatsapp.href=`https://wa.me/?text=${encodeURIComponent(message)}`; }; people.addEventListener('input',updateClass); updateClass(); document.querySelector('#deadline-month').textContent=new Date().getMonth()+1>=7?'diciembre':'junio'; })();
+    </script>
+  </body>
+</html>
+
